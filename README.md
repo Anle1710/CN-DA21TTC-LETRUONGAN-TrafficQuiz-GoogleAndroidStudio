@@ -14,3 +14,5 @@
 - Trắc nghiệm văn hóa và đạo đức
 - Trắc nghiệm biển báo đường bộ
 - Trắc nghiệm sa hình
+## Kiểm tra kết quả 
+- kiểm tra kết quả người dùng làm đúng/sai bao nhiêu câu hỏi
