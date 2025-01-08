@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Hiển thị số câu hỏi -->
+    <TextView
+        android:id="@+id/questionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Câu 1:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Hiển thị câu hỏi -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionNumber"
+        android:layout_marginTop="8dp"
+        android:text="Câu hỏi sẽ hiển thị ở đây"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <!-- Hiển thị hình ảnh câu hỏi -->
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/questionText"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+    <!-- Container chứa các câu trả lời -->
+    <ScrollView
+        android:id="@+id/scrollOptionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionImage"
+        android:layout_marginTop="8dp">
+        <RadioGroup
+            android:id="@+id/optionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Hiển thị giải thích -->
+    <TextView
+        android:id="@+id/explanationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollOptionsContainer"
+        android:layout_marginTop="8dp"
+        android:text="Giải thích sẽ hiển thị ở đây"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone" />
+
+    <!-- Nút quay lại -->
+    <Button
+        android:id="@+id/buttonBack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="Quay lại" />
+
+    <!-- Nút tiếp theo -->
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="Tiếp theo" />
+
+</RelativeLayout>

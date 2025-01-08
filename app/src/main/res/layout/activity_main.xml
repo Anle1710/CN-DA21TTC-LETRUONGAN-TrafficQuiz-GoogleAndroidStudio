@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="730dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <!-- LinearLayout đầu tiên có chiều cao 150dp -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ôn tập luật giao thông đường bộ"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- LinearLayout thứ hai chứa các CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <!-- CardView 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onCardClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Lý Thuyết"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:drawableLeft="@drawable/baseline_menu_book_24" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onCardClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/baseline_traffic_24"
+                            android:text="Thi Thử"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- CardView 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onCardClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Văn hóa và đạo đức"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:drawableLeft="@drawable/baseline_bike_scooter_24" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- CardView 4 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onCardClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Biển báo đường bộ"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:drawableLeft="@drawable/warning_sign_30915" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- CardView 5 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onCardClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Sa Hình"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:drawableLeft="@drawable/baseline_arrow_circle_right_24" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

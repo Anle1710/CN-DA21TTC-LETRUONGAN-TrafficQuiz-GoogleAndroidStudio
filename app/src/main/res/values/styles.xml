@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <!-- Áp dụng Color State List làm màu nền của Button -->
+        <item name="android:backgroundTint">@color/button_color</item>
+        <!-- Màu chữ của Button -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
